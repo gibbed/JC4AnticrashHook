@@ -151,8 +151,8 @@ BOOL __stdcall MyGlobalMemoryStatusEx(LPMEMORYSTATUSEX lpBuffer)
 
   auto updateResources = InGameModule<void*>(gHookState.GameModule, 0x000000014B536260ULL);
 
-  auto codeCheck = "\x49\x89\xE3\x55\x56\x41\x54\x41\x55\x48\x83\xEC\x58\x4C\x8B\x89\x08\x81\x01\x00";
-  if (memcmp(updateResources, codeCheck, sizeof(codeCheck)))
+  const char codeCheck[] = "\x49\x89\xE3\x55\x56\x41\x54\x41\x55\x48\x83\xEC\x58\x4C\x8B\x89\x08\x81\x01\x00";
+  if (memcmp(updateResources, codeCheck, sizeof(codeCheck)-1))
   {
     printf("Code check failed. Unsupported version of Just Cause 4.\n");
     return result;
