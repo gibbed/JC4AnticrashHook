@@ -33,4 +33,4 @@ after_build:
   - 7z a -r -tzip -mx=9 jc4anticrashhook.zip ./x64/Release/XInput9_1_0.dll
 
 artifacts:
-  - path: '*-*.zip'
+  - path: 'jc4anticrashhook.zip'
