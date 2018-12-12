@@ -1,0 +1,36 @@
+version: 1.0.{build}
+
+branches:
+  only:
+    - master
+
+skip_tags: true
+skip_commits:
+  files:
+    - README.md
+    - LICENSE.txt
+
+max_jobs: 1
+
+image: Visual Studio 2017
+
+clone_folder: c:\projects\gibbed-jc4ach
+
+install:
+  - git submodule update --init --recursive
+
+configuration:
+  - Release
+
+build:
+  project: anticrashhook.sln
+  parallel: true
+  verbosity: minimal
+
+after_build:
+  - set TZ=GMT
+  - git log . > git-log.txt
+  - 7z a -r -tzip -mx=9 jc4anticrashhook.zip ./x64/Release/XInput9_1_0.dll
+
+artifacts:
+  - path: '*-*.zip'
