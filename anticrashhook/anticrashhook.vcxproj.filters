@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\stdafx\stdafx.cpp">
+      <Filter>project\stdafx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\misc.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wrapper.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\stdafx\stdafx.h">
+      <Filter>project\stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stdafx\targetver.h">
+      <Filter>project\stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\misc.h">
+      <Filter>project</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="project">
+      <UniqueIdentifier>{70aa1205-ee6c-4c43-87dc-911475a575b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project\stdafx">
+      <UniqueIdentifier>{d943d122-dfff-4fbb-96ae-b089d4eeff96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exports.def">
+      <Filter>project</Filter>
+    </None>
+    <None Include="src\shims.inc">
+      <Filter>project</Filter>
+    </None>
+    <None Include="src\wrapper_shims.inc">
+      <Filter>project</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\shims.asm">
+      <Filter>project</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+LIBRARY
+EXPORTS
+  DllMain=shim_h_DllMain @1
+  XInputGetCapabilities=shim_h_XInputGetCapabilities @2
+  XInputGetDSoundAudioDeviceGuids=shim_h_XInputGetDSoundAudioDeviceGuids @3
+  XInputGetState=shim_h_XInputGetState @4
+  XInputSetState=shim_h_XInputSetState @5
