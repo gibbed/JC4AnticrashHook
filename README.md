@@ -13,6 +13,7 @@ Like what I've done? **Consider supporting me on [Patreon](https://patreon.com/g
 * This hook applies to the first version of Just Cause 4 released on Steam. **No other version.**
 * There is a performance hit for using this hook. How significant? I couldn't tell you.
 * There is a possibility of incorrect graphics when the issue occurs. Can't do anything about that.
+* If you have any software that does anything funny to D3D11, it's possible this hook will not work properly. Can't do anything about that.
 
 ## Usage
 
